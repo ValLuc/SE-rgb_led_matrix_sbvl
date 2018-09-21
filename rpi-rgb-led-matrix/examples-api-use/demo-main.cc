@@ -6,7 +6,7 @@
 //
 // This is a grab-bag of various demos and not very readable.
 
-// POLY
+// POLY2
 
 #include "led-matrix.h"
 #include "threaded-canvas-manipulator.h"
