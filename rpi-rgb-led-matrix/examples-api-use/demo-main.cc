@@ -224,167 +224,172 @@ class PolyBasque : public ThreadedCanvasManipulator {
 		 int debut_x = 0;
 			const int debut_y = 18;
 			const int scrollms = 90;
-			const int scrollms2 = 4000;
+			const int scrollms2 = 500;
 			int i;
 			
 			while (1)
 			{
-			for(i=0;i<64;i++)
-			{
-			// P
-			canvas()->SetPixel(debut_x+2, debut_y -3, 25, 25, 255);
-			canvas()->SetPixel(debut_x+2, debut_y -4, 25, 25, 255);
-			
-			canvas()->SetPixel(debut_x+3, debut_y -3, 25, 25, 255);
-			canvas()->SetPixel(debut_x+3, debut_y -4, 25, 25, 255);
-			
-			canvas()->SetPixel(debut_x+4, debut_y -3, 25, 25, 255);
-			canvas()->SetPixel(debut_x+4, debut_y -4, 25, 25, 255);
-			
-			canvas()->SetPixel(debut_x+5, debut_y -4, 25, 25, 255);
-			canvas()->SetPixel(debut_x+5, debut_y -5, 25, 25, 255);
-			canvas()->SetPixel(debut_x+5, debut_y -6, 25, 25, 255);
-			canvas()->SetPixel(debut_x+5, debut_y -7, 25, 25, 255);
-			canvas()->SetPixel(debut_x+5, debut_y -8, 25, 25, 255);			
-			
-			canvas()->SetPixel(debut_x+6, debut_y -4, 25, 25, 255);
-			canvas()->SetPixel(debut_x+6, debut_y -5, 25, 25, 255);
-			canvas()->SetPixel(debut_x+6, debut_y -6, 25, 25, 255);
-			canvas()->SetPixel(debut_x+6, debut_y -7, 25, 25, 255);
-			canvas()->SetPixel(debut_x+6, debut_y -8, 25, 25, 255);	
-			
-			canvas()->SetPixel(debut_x+2, debut_y -9, 25, 25, 255);
-			canvas()->SetPixel(debut_x+2, debut_y -8, 25, 25, 255);
-			
-			canvas()->SetPixel(debut_x+3, debut_y -9, 25, 25, 255);
-			canvas()->SetPixel(debut_x+3, debut_y -8, 25, 25, 255);
-			
-			canvas()->SetPixel(debut_x+4, debut_y -9, 25, 25, 255);
-			canvas()->SetPixel(debut_x+4, debut_y -8, 25, 25, 255);
-			
-			
-			//O
-			
-			DrawLine(canvas(), debut_x+11, debut_y, debut_x+14, debut_y, Color(25, 25, 255));
-			DrawLine(canvas(), debut_x+11, debut_y-1, debut_x+14, debut_y-1, Color(25, 25, 255));
-			
-			DrawLine(canvas(), debut_x+9, debut_y-2, debut_x+9, debut_y -5, Color(25, 25, 255));
-			DrawLine(canvas(), debut_x+10, debut_y-2, debut_x+10, debut_y -5, Color(25, 25, 255));
-			
-			DrawLine(canvas(), debut_x+11, debut_y-6, debut_x+14, debut_y -6, Color(25, 25, 255));
-			DrawLine(canvas(), debut_x+11, debut_y-7, debut_x+14, debut_y -7, Color(25, 25, 255));
-			
-			DrawLine(canvas(), debut_x+15, debut_y-2, debut_x+15, debut_y -5, Color(25, 25, 255));
-			DrawLine(canvas(), debut_x+16, debut_y-2, debut_x+16, debut_y -5, Color(25, 25, 255));
-			
-			//L
-			
-			DrawLine(canvas(), debut_x+19, debut_y, debut_x+19, debut_y -9, Color(25, 25, 255));
-			DrawLine(canvas(), debut_x+20, debut_y, debut_x+20, debut_y -9, Color(25, 25, 255));
-			
-			//Y
-			DrawLine(canvas(), debut_x+24, debut_y, debut_x+24, debut_y -4, Color(25, 25, 255));
-			DrawLine(canvas(), debut_x+25, debut_y, debut_x+25, debut_y -4, Color(25, 25, 255));
-			
-			DrawLine(canvas(), debut_x+30, debut_y+4, debut_x+30, debut_y -4, Color(25, 25, 255));
-			DrawLine(canvas(), debut_x+31, debut_y+4, debut_x+31, debut_y -4, Color(25, 25, 255));
-			
-			
-			DrawLine(canvas(), debut_x+26, debut_y, debut_x+29, debut_y , Color(25, 25, 255));
-			DrawLine(canvas(), debut_x+26, debut_y-1, debut_x+29, debut_y -1, Color(25, 25, 255));
-			
-			
-			usleep(scrollms * 1000);
-			
-			
-			DrawLine(canvas(), debut_x, debut_y, debut_x, debut_y-9, Color(0, 0, 0));
-			DrawLine(canvas(), debut_x+1, debut_y, debut_x+1, debut_y-9, Color(0, 0, 0));
-			
-			canvas()->SetPixel(debut_x+2, debut_y -3, 0, 0, 0);
-			canvas()->SetPixel(debut_x+2, debut_y -4, 0, 0, 0);
-			
-			canvas()->SetPixel(debut_x+3, debut_y -3, 0, 0, 0);
-			canvas()->SetPixel(debut_x+3, debut_y -4, 0, 0, 0);
-			
-			canvas()->SetPixel(debut_x+4, debut_y -3, 0, 0, 0);
-			canvas()->SetPixel(debut_x+4, debut_y -4, 0, 0, 0);
-			
-			canvas()->SetPixel(debut_x+5, debut_y -4, 0, 0, 0);
-			canvas()->SetPixel(debut_x+5, debut_y -5, 0, 0, 0);
-			canvas()->SetPixel(debut_x+5, debut_y -6, 0, 0, 0);
-			canvas()->SetPixel(debut_x+5, debut_y -7, 0, 0, 0);
-			canvas()->SetPixel(debut_x+5, debut_y -8, 0, 0, 0);			
-			
-			canvas()->SetPixel(debut_x+6, debut_y -4, 0, 0, 0);
-			canvas()->SetPixel(debut_x+6, debut_y -5, 0, 0, 0);
-			canvas()->SetPixel(debut_x+6, debut_y -6, 0, 0, 0);
-			canvas()->SetPixel(debut_x+6, debut_y -7, 0, 0, 0);
-			canvas()->SetPixel(debut_x+6, debut_y -8, 0, 0, 0);	
-			
-			canvas()->SetPixel(debut_x+2, debut_y -9, 0, 0, 0);
-			canvas()->SetPixel(debut_x+2, debut_y -8, 0, 0, 0);
-			
-			canvas()->SetPixel(debut_x+3, debut_y -9, 0, 0, 0);
-			canvas()->SetPixel(debut_x+3, debut_y -8, 0, 0, 0);
-			
-			canvas()->SetPixel(debut_x+4, debut_y -9, 0, 0, 0);
-			canvas()->SetPixel(debut_x+4, debut_y -8, 0, 0, 0);
-			
-			
-			//O
-			
-			DrawLine(canvas(), debut_x+11, debut_y, debut_x+14, debut_y, Color(0, 0, 0));
-			DrawLine(canvas(), debut_x+11, debut_y-1, debut_x+14, debut_y-1, Color(0, 0, 0));
-			
-			DrawLine(canvas(), debut_x+9, debut_y-2, debut_x+9, debut_y -5, Color(0, 0, 0));
-			DrawLine(canvas(), debut_x+10, debut_y-2, debut_x+10, debut_y -5, Color(0, 0, 0));
-			
-			DrawLine(canvas(), debut_x+11, debut_y-6, debut_x+14, debut_y -6, Color(0, 0, 0));
-			DrawLine(canvas(), debut_x+11, debut_y-7, debut_x+14, debut_y -7, Color(0, 0, 0));
-			
-			DrawLine(canvas(), debut_x+15, debut_y-2, debut_x+15, debut_y -5, Color(0, 0, 0));
-			DrawLine(canvas(), debut_x+16, debut_y-2, debut_x+16, debut_y -5, Color(0, 0, 0));
-			
-			//L
-			
-			DrawLine(canvas(), debut_x+19, debut_y, debut_x+19, debut_y -9, Color(0, 0, 0));
-			DrawLine(canvas(), debut_x+20, debut_y, debut_x+20, debut_y -9, Color(0, 0, 0));
-			
-			//Y
-			DrawLine(canvas(), debut_x+24, debut_y, debut_x+24, debut_y -4, Color(0, 0, 0));
-			DrawLine(canvas(), debut_x+25, debut_y, debut_x+25, debut_y -4, Color(0, 0, 0));
-			
-			DrawLine(canvas(), debut_x+30, debut_y+4, debut_x+30, debut_y -4, Color(0, 0, 0));
-			DrawLine(canvas(), debut_x+31, debut_y+4, debut_x+31, debut_y -4, Color(0, 0, 0));
-			
-			DrawLine(canvas(), debut_x+26, debut_y, debut_x+29, debut_y , Color(0, 0, 0));
-			DrawLine(canvas(), debut_x+26, debut_y-1, debut_x+29, debut_y -1, Color(0, 0, 0));
-			debut_x = debut_x+1;
+						for(i=0;i<64;i++)
+						{
+						// P
+						DrawLine(canvas(), debut_x, debut_y, debut_x, debut_y-9, Color(25, 25, 255));
+						DrawLine(canvas(), debut_x+1, debut_y, debut_x+1, debut_y-9, Color(25, 25, 255));
+						
+						canvas()->SetPixel(debut_x+2, debut_y -3, 25, 25, 255);
+						canvas()->SetPixel(debut_x+2, debut_y -4, 25, 25, 255);
+						
+						canvas()->SetPixel(debut_x+3, debut_y -3, 25, 25, 255);
+						canvas()->SetPixel(debut_x+3, debut_y -4, 25, 25, 255);
+						
+						canvas()->SetPixel(debut_x+4, debut_y -3, 25, 25, 255);
+						canvas()->SetPixel(debut_x+4, debut_y -4, 25, 25, 255);
+						
+						canvas()->SetPixel(debut_x+5, debut_y -4, 25, 25, 255);
+						canvas()->SetPixel(debut_x+5, debut_y -5, 25, 25, 255);
+						canvas()->SetPixel(debut_x+5, debut_y -6, 25, 25, 255);
+						canvas()->SetPixel(debut_x+5, debut_y -7, 25, 25, 255);
+						canvas()->SetPixel(debut_x+5, debut_y -8, 25, 25, 255);			
+						
+						canvas()->SetPixel(debut_x+6, debut_y -4, 25, 25, 255);
+						canvas()->SetPixel(debut_x+6, debut_y -5, 25, 25, 255);
+						canvas()->SetPixel(debut_x+6, debut_y -6, 25, 25, 255);
+						canvas()->SetPixel(debut_x+6, debut_y -7, 25, 25, 255);
+						canvas()->SetPixel(debut_x+6, debut_y -8, 25, 25, 255);	
+						
+						canvas()->SetPixel(debut_x+2, debut_y -9, 25, 25, 255);
+						canvas()->SetPixel(debut_x+2, debut_y -8, 25, 25, 255);
+						
+						canvas()->SetPixel(debut_x+3, debut_y -9, 25, 25, 255);
+						canvas()->SetPixel(debut_x+3, debut_y -8, 25, 25, 255);
+						
+						canvas()->SetPixel(debut_x+4, debut_y -9, 25, 25, 255);
+						canvas()->SetPixel(debut_x+4, debut_y -8, 25, 25, 255);
+						
+						
+						//O
+						
+						DrawLine(canvas(), debut_x+11, debut_y, debut_x+14, debut_y, Color(25, 25, 255));
+						DrawLine(canvas(), debut_x+11, debut_y-1, debut_x+14, debut_y-1, Color(25, 25, 255));
+						
+						DrawLine(canvas(), debut_x+9, debut_y-2, debut_x+9, debut_y -5, Color(25, 25, 255));
+						DrawLine(canvas(), debut_x+10, debut_y-2, debut_x+10, debut_y -5, Color(25, 25, 255));
+						
+						DrawLine(canvas(), debut_x+11, debut_y-6, debut_x+14, debut_y -6, Color(25, 25, 255));
+						DrawLine(canvas(), debut_x+11, debut_y-7, debut_x+14, debut_y -7, Color(25, 25, 255));
+						
+						DrawLine(canvas(), debut_x+15, debut_y-2, debut_x+15, debut_y -5, Color(25, 25, 255));
+						DrawLine(canvas(), debut_x+16, debut_y-2, debut_x+16, debut_y -5, Color(25, 25, 255));
+						
+						//L
+						
+						DrawLine(canvas(), debut_x+19, debut_y, debut_x+19, debut_y -9, Color(25, 25, 255));
+						DrawLine(canvas(), debut_x+20, debut_y, debut_x+20, debut_y -9, Color(25, 25, 255));
+						
+						//Y
+						DrawLine(canvas(), debut_x+24, debut_y, debut_x+24, debut_y -4, Color(25, 25, 255));
+						DrawLine(canvas(), debut_x+25, debut_y, debut_x+25, debut_y -4, Color(25, 25, 255));
+						
+						DrawLine(canvas(), debut_x+30, debut_y+4, debut_x+30, debut_y -4, Color(25, 25, 255));
+						DrawLine(canvas(), debut_x+31, debut_y+4, debut_x+31, debut_y -4, Color(25, 25, 255));
+						
+						
+						DrawLine(canvas(), debut_x+26, debut_y, debut_x+29, debut_y , Color(25, 25, 255));
+						DrawLine(canvas(), debut_x+26, debut_y-1, debut_x+29, debut_y -1, Color(25, 25, 255));
+						
+						
+						usleep(scrollms * 1000);
+						
+						
+						DrawLine(canvas(), debut_x, debut_y, debut_x, debut_y-9, Color(0, 0, 0));
+						DrawLine(canvas(), debut_x+1, debut_y, debut_x+1, debut_y-9, Color(0, 0, 0));
+						
+						canvas()->SetPixel(debut_x+2, debut_y -3, 0, 0, 0);
+						canvas()->SetPixel(debut_x+2, debut_y -4, 0, 0, 0);
+						
+						canvas()->SetPixel(debut_x+3, debut_y -3, 0, 0, 0);
+						canvas()->SetPixel(debut_x+3, debut_y -4, 0, 0, 0);
+						
+						canvas()->SetPixel(debut_x+4, debut_y -3, 0, 0, 0);
+						canvas()->SetPixel(debut_x+4, debut_y -4, 0, 0, 0);
+						
+						canvas()->SetPixel(debut_x+5, debut_y -4, 0, 0, 0);
+						canvas()->SetPixel(debut_x+5, debut_y -5, 0, 0, 0);
+						canvas()->SetPixel(debut_x+5, debut_y -6, 0, 0, 0);
+						canvas()->SetPixel(debut_x+5, debut_y -7, 0, 0, 0);
+						canvas()->SetPixel(debut_x+5, debut_y -8, 0, 0, 0);			
+						
+						canvas()->SetPixel(debut_x+6, debut_y -4, 0, 0, 0);
+						canvas()->SetPixel(debut_x+6, debut_y -5, 0, 0, 0);
+						canvas()->SetPixel(debut_x+6, debut_y -6, 0, 0, 0);
+						canvas()->SetPixel(debut_x+6, debut_y -7, 0, 0, 0);
+						canvas()->SetPixel(debut_x+6, debut_y -8, 0, 0, 0);	
+						
+						canvas()->SetPixel(debut_x+2, debut_y -9, 0, 0, 0);
+						canvas()->SetPixel(debut_x+2, debut_y -8, 0, 0, 0);
+						
+						canvas()->SetPixel(debut_x+3, debut_y -9, 0, 0, 0);
+						canvas()->SetPixel(debut_x+3, debut_y -8, 0, 0, 0);
+						
+						canvas()->SetPixel(debut_x+4, debut_y -9, 0, 0, 0);
+						canvas()->SetPixel(debut_x+4, debut_y -8, 0, 0, 0);
+						
+						
+						//O
+						
+						DrawLine(canvas(), debut_x+11, debut_y, debut_x+14, debut_y, Color(0, 0, 0));
+						DrawLine(canvas(), debut_x+11, debut_y-1, debut_x+14, debut_y-1, Color(0, 0, 0));
+						
+						DrawLine(canvas(), debut_x+9, debut_y-2, debut_x+9, debut_y -5, Color(0, 0, 0));
+						DrawLine(canvas(), debut_x+10, debut_y-2, debut_x+10, debut_y -5, Color(0, 0, 0));
+						
+						DrawLine(canvas(), debut_x+11, debut_y-6, debut_x+14, debut_y -6, Color(0, 0, 0));
+						DrawLine(canvas(), debut_x+11, debut_y-7, debut_x+14, debut_y -7, Color(0, 0, 0));
+						
+						DrawLine(canvas(), debut_x+15, debut_y-2, debut_x+15, debut_y -5, Color(0, 0, 0));
+						DrawLine(canvas(), debut_x+16, debut_y-2, debut_x+16, debut_y -5, Color(0, 0, 0));
+						
+						//L
+						
+						DrawLine(canvas(), debut_x+19, debut_y, debut_x+19, debut_y -9, Color(0, 0, 0));
+						DrawLine(canvas(), debut_x+20, debut_y, debut_x+20, debut_y -9, Color(0, 0, 0));
+						
+						//Y
+						DrawLine(canvas(), debut_x+24, debut_y, debut_x+24, debut_y -4, Color(0, 0, 0));
+						DrawLine(canvas(), debut_x+25, debut_y, debut_x+25, debut_y -4, Color(0, 0, 0));
+						
+						DrawLine(canvas(), debut_x+30, debut_y+4, debut_x+30, debut_y -4, Color(0, 0, 0));
+						DrawLine(canvas(), debut_x+31, debut_y+4, debut_x+31, debut_y -4, Color(0, 0, 0));
+						
+						DrawLine(canvas(), debut_x+26, debut_y, debut_x+29, debut_y , Color(0, 0, 0));
+						DrawLine(canvas(), debut_x+26, debut_y-1, debut_x+29, debut_y -1, Color(0, 0, 0));
+						debut_x = debut_x+1;
+						}
+					 
+					matrix_->Fill(255, 0, 0);
+					
+					DrawLine(canvas(), 0, 0, 64, 32, Color(0, 255, 0));
+					DrawLine(canvas(), 1, 0, 64, 31, Color(0, 255, 0));
+					DrawLine(canvas(), 0, 1, 63, 32, Color(0, 255, 0));
+				
+					DrawLine(canvas(), 0, 32, 64, 0, Color(0, 255, 0));
+					DrawLine(canvas(), 1, 32, 64, 1, Color(0, 255, 0));
+					DrawLine(canvas(), 0, 31, 63, 0, Color(0, 255, 0));
+					
+					DrawLine(canvas(), 31, 0, 31, 32, Color(255, 255, 255));
+					DrawLine(canvas(), 32, 0, 32, 32, Color(255, 255, 255));
+					DrawLine(canvas(), 33, 0, 33, 32, Color(255, 255, 255));
+					DrawLine(canvas(), 34, 0, 34, 32, Color(255, 255, 255));
+					
+					DrawLine(canvas(), 0, 15, 64, 15, Color(255, 255, 255));
+					DrawLine(canvas(), 0, 16, 64, 16, Color(255, 255, 255));
+					DrawLine(canvas(), 0, 17, 64, 17, Color(255, 255, 255));
+					DrawLine(canvas(), 0, 18, 64, 18, Color(255, 255, 255));
+					
+					usleep(scrollms2 * 1000);
+					
+					matrix_->Fill(0, 0, 0);
 			}
-		 
-		matrix_->Fill(255, 0, 0);
-		
-		DrawLine(canvas(), 0, 0, 64, 32, Color(0, 255, 0));
-		DrawLine(canvas(), 1, 0, 64, 31, Color(0, 255, 0));
-		DrawLine(canvas(), 0, 1, 63, 32, Color(0, 255, 0));
-	
-		DrawLine(canvas(), 0, 32, 64, 0, Color(0, 255, 0));
-		DrawLine(canvas(), 1, 32, 64, 1, Color(0, 255, 0));
-		DrawLine(canvas(), 0, 31, 63, 0, Color(0, 255, 0));
-		
-		DrawLine(canvas(), 31, 0, 31, 32, Color(255, 255, 255));
-		DrawLine(canvas(), 32, 0, 32, 32, Color(255, 255, 255));
-		DrawLine(canvas(), 33, 0, 33, 32, Color(255, 255, 255));
-		DrawLine(canvas(), 34, 0, 34, 32, Color(255, 255, 255));
-		
-		DrawLine(canvas(), 0, 15, 64, 15, Color(255, 255, 255));
-		DrawLine(canvas(), 0, 16, 64, 16, Color(255, 255, 255));
-		DrawLine(canvas(), 0, 17, 64, 17, Color(255, 255, 255));
-		DrawLine(canvas(), 0, 18, 64, 18, Color(255, 255, 255));
-		
-		usleep(scrollms2 * 1000);
-		
-			}
+			
 	}
 	
 	private:
