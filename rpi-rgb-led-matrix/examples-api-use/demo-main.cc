@@ -229,6 +229,8 @@ class PolyBasque : public ThreadedCanvasManipulator {
 			
 			while (1)
 			{
+							debut_x = 0;
+							debut_y = 18;
 						for(i=0;i<64;i++)
 						{
 						// P
@@ -363,6 +365,7 @@ class PolyBasque : public ThreadedCanvasManipulator {
 						DrawLine(canvas(), debut_x+26, debut_y, debut_x+29, debut_y , Color(0, 0, 0));
 						DrawLine(canvas(), debut_x+26, debut_y-1, debut_x+29, debut_y -1, Color(0, 0, 0));
 						debut_x = debut_x+1;
+						
 						}
 					 
 					matrix_->Fill(255, 0, 0);
