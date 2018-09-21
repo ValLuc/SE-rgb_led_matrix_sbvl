@@ -230,7 +230,6 @@ class PolyBasque : public ThreadedCanvasManipulator {
 			while (1)
 			{
 							debut_x = 0;
-							debut_y = 18;
 						for(i=0;i<64;i++)
 						{
 						// P
