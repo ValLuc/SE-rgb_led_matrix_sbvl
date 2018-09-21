@@ -1237,7 +1237,7 @@ int main(int argc, char *argv[]) {
 
   // These are the defaults when no command-line flags are given.
   matrix_options.rows = 32;
-  matrix_options.chain_length = 1;
+  matrix_options.chain_length = 2;
   matrix_options.parallel = 1;
 
   // First things first: extract the command line flags that contain
@@ -1245,7 +1245,7 @@ int main(int argc, char *argv[]) {
   if (!ParseOptionsFromFlags(&argc, &argv, &matrix_options, &runtime_opt)) {
     return usage(argv[0]);
   }
-
+/*
   int opt;
   while ((opt = getopt(argc, argv, "dD:t:r:P:c:p:b:m:LR:")) != -1) {
     switch (opt) {
@@ -1303,10 +1303,12 @@ int main(int argc, char *argv[]) {
       break;
 
     default: /* '?' */
-      return usage(argv[0]);
+  /*    return usage(argv[0]);
     }
-  }
-
+  }*/
+  
+  demo = 12;
+ 
   if (optind < argc) {
     demo_parameter = argv[optind];
   }
