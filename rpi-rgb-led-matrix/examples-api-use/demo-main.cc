@@ -5,6 +5,9 @@
 // covered by the GPL v2)
 //
 // This is a grab-bag of various demos and not very readable.
+
+// POLY
+
 #include "led-matrix.h"
 #include "threaded-canvas-manipulator.h"
 #include "pixel-mapper.h"
